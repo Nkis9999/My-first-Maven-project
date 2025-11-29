@@ -9,7 +9,7 @@ import com.course.model.Toyota;
 public class AppMain {
 
 	public static void main(String[] args) {
-		ApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
+		ApplicationContext ctx = new AnnotationConfigApplicationContext("com.course.config");
 
 		for (String name : ctx.getBeanDefinitionNames()) {
 			System.out.println(name);
